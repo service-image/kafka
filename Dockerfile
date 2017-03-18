@@ -1,7 +1,7 @@
 FROM java:openjdk-8-jre-alpine
 
-ENV SCALA_VERSION=2.11 \
-    KAFKA_VERSION=0.10.1.1 \
+ENV SCALA_VERSION=2.12 \
+    KAFKA_VERSION=0.10.2.0 \
     KAFKA_HOME=/opt/kafka \
     PATH=${PATH}:/opt/kafka/bin
 
