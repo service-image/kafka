@@ -18,7 +18,7 @@ COPY scripts/* /usr/bin/
 
 RUN chmod a+x /usr/bin/start-kafka.sh /usr/bin/create-topics.sh
 
-EXPOSE 2181 9092
+EXPOSE 9092
 
 # Use "exec" form so that it runs as PID 1 (useful for graceful shutdown)
 CMD ["start-kafka.sh"]
