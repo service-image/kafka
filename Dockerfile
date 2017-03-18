@@ -5,7 +5,7 @@ ENV SCALA_VERSION=2.12 \
     KAFKA_HOME=/opt/kafka \
     PATH=${PATH}:/opt/kafka/bin
 
-RUN apk add --update bash vim curl jq docker && \
+RUN apk add --update bash vim curl jq && \
   mkdir /opt && \
   mirror=$(curl --stderr /dev/null https://www.apache.org/dyn/closer.cgi\?as_json\=1 | jq -r '.preferred') && \
   url="${mirror}kafka/${KAFKA_VERSION}/kafka_${SCALA_VERSION}-${KAFKA_VERSION}.tgz" && \
